@@ -1,11 +1,10 @@
-return{
-"mbbill/undotree",
+return {
+    "mbbill/undotree",
     lazy = false, -- needs to be explicitly set, because of the keys property
-    keys = {
-      {
+    configs = true,
+    keys = {{
         "<leader>u",
         vim.cmd.UndotreeToggle,
-        desc = "Toggle undotree",
-      },
-    },
+        desc = "Toggle undotree"
+    }}
 }
